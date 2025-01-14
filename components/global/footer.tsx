@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { FooterNewsLetter } from "./footer-newsletter";
+import { Spacer } from "./spacer";
 
 interface SocialsNetwork {
   icon: LucideIcon;
@@ -58,6 +59,7 @@ const footerGroups: FooterGroup[] = [
 export const Footer: FC = () => {
   return (
     <footer>
+        <Spacer tooSmall />
       <AppContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
         <div className="space-y-4">
           <Image
@@ -103,7 +105,7 @@ export const Footer: FC = () => {
           <FooterNewsLetter />
         </div>
       </AppContainer>
-      <p className="text-center p-8 md:p-8 border border-muted mt-4">© {new Date().getFullYear()} Qode Interactive, All Rights Reserved</p>
+      <p className="text-center p-8 md:p-8 border border-t-muted mt-4">© {new Date().getFullYear()} Qode Interactive, All Rights Reserved</p>
     </footer>
   );
 };
