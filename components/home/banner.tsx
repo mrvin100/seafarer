@@ -15,7 +15,7 @@ export const Banner: FC = () => {
           <source src={"/video-boat.mp4"} type="video/mp4" />
           Your browser does not support the video tag
         </video>
-        <div className="absolute bottom-[10%] left-[10%] w-full px-4 sm:w-auto bg-muted/30">
+        <div className="absolute bottom-[10%] left-[5%] sm:left-[10%] px-4 sm:w-auto bg-muted/30">
           <HeadingBox
             subTitle="explore the ocean"
             title="rent a yacht"
