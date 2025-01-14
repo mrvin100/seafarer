@@ -1,38 +1,39 @@
 import Image from "next/image";
-import { AppContainer } from "../global";
+import { AppContainer, Spacer } from "../global";
 import { FC } from "react";
 import { HeadingBox } from "./heading-box";
 interface Gallery {
   title?: string;
+  subTitle?: string;
   image?: string;
 }
-const gallery: Gallery[] = [
-  { image: "/images/brand_img1.png" },
-  { image: "/images/brand_img2.png" },
-  { image: "/images/brand_img3.png" },
-  { image: "/images/brand_img4.png" },
-  { image: "/images/brand_img5.png" },
-  { image: "/images/brand_img6.png" },
+const list: Gallery[] = [
+  { image: "/images/list-img-2.jpg" },
+  { image: "/images/list-img-3.jpg" },
 ];
 export const Gallery: FC = () => {
   return (
     <div>
       <AppContainer className="">
         <HeadingBox />
-        <div className="grid justify-center items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 ">
-          {gallery &&
-            gallery.length > 0 &&
-            gallery.map((brand) => (
-              <Image
-                key={brand.image}
-                src={brand.image ?? "/logo-light.png"}
-                height={100}
-                width={100}
-                alt="Brand image"
-                className="mx-auto"
-              />
+        <Spacer small />
+        <div className="grid justify-center sm:grid-cols-2 gap-4 md:gap-8 ">
+          {list &&
+            list.length > 0 &&
+            list.map((box) => (
+              <div key={box.title} className="p-2 border-muted-foreground border">
+                <Image
+                  src={box.image ?? "/logo-light.png"}
+                  height={800}
+                  width={800}
+                  alt="Brand image"
+                  className="mx-auto h-80 w-full object-cover"
+                />
+                <HeadingBox withDescription={false} subTitle="123 $ / per day" title="videto yacht" subTitleStyle="normal-case" titleStyle="text-xl" />
+              </div>
             ))}
         </div>
+        <Spacer tooSmall />
       </AppContainer>
     </div>
   );
