@@ -23,8 +23,8 @@ export const Pricing: FC = () => {
           {list &&
             list.length > 0 &&
             list.map((box) => (
-              <div key={box.title} className="p-2 border-muted-foreground border">
-                <div className="border text-center space-y-4 md:space-y-6 p-4 md:py-8">
+              <div key={box.title} className="p-2 border-muted-foreground border w-full">
+                <div className="border text-center space-y-4 md:space-y-6 p-4 sm:p-8 w-full">
                     <h4 className="uppercase font-light font-comparant text-xl">{box.title}</h4>
                     <h3 className="font-normal text-4xl"><sup className="font-light">$</sup>{box.price} <sub className="font-extralight ">/ month</sub></h3>
                     <ul className="text-sm max-w-52 mx-auto space-y-4">

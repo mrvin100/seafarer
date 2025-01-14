@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Cormorant, Roboto } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/theme-provider"
+import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Footer } from "@/components/global";
-
+import Header from "@/components/global/header";
 
 const cormorant = Cormorant({
   variable: "--font-cormorant",
@@ -13,7 +13,7 @@ const cormorant = Cormorant({
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ['100' , '300' , '400', '500', '700']
+  weight: ["100", "300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -30,15 +30,16 @@ export default function RootLayout({
     <html lang="en" suppressContentEditableWarning={true}>
       <body
         className={`${roboto.className} font-extralight ${cormorant.variable} antialiased tracking-wider`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
         >
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-        {children}
-        <Footer />
+          <Header />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
