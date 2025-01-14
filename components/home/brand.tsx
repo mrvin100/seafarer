@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AppContainer } from "../global";
+import { AppContainer, Spacer } from "../global";
 import { FC } from "react";
 interface Brands {
     title?: string
@@ -20,5 +20,7 @@ export const Brands:FC = () => {
             <Image key={brand.image} src={brand.image ?? '/logo-light.png'} height={100} width={100} alt="Brand image" className="mx-auto" />
             )}
         </AppContainer>
+        <Spacer small />
+        <div><Image src={'/yacht-image.jpg'} alt="Place image" height={1000} width={1000} className="w-full" /></div>
     </div> );
 }

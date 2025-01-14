@@ -8,8 +8,8 @@ interface Gallery {
   image?: string;
 }
 const list: Gallery[] = [
-  { image: "/images/list-img-2.jpg" },
-  { image: "/images/list-img-3.jpg" },
+  { image: "/images/list-img-2.jpg", title: "cometo yacht", subTitle: "123 $ / per day" },
+  { image: "/images/list-img-3.jpg", title: "videto yacht", subTitle: "123 $ / per day" },
 ];
 export const Gallery: FC = () => {
   return (
@@ -29,7 +29,7 @@ export const Gallery: FC = () => {
                   alt="Brand image"
                   className="mx-auto h-80 w-full object-cover"
                 />
-                <HeadingBox withDescription={false} subTitle="123 $ / per day" title="videto yacht" subTitleStyle="normal-case" titleStyle="text-xl" />
+                <HeadingBox withDescription={false} subTitle={box.subTitle} title={box.title} subTitleStyle="normal-case" titleStyle="text-xl" />
               </div>
             ))}
         </div>
