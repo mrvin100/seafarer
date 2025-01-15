@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { Footer } from "@/components/global";
-import Header from "@/components/global/header";
+import { Footer, Header } from "@/components/global";
+import { Toaster } from "@/components/ui/sonner";
 
 const cormorant = Cormorant({
   variable: "--font-cormorant",
@@ -40,6 +40,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster richColors closeButton position="top-right" />
         </ThemeProvider>
       </body>
     </html>

@@ -28,7 +28,7 @@ export const Pricing: FC = () => {
                     <h4 className="uppercase font-light font-comparant text-xl">{box.title}</h4>
                     <h3 className="font-normal text-4xl"><sup className="font-light">$</sup>{box.price} <sub className="font-extralight ">/ month</sub></h3>
                     <ul className="text-sm max-w-52 mx-auto space-y-4">
-                    {box.benefits?.map((benefit) => <li key={benefit} className="leading-6 tracking-widest">{benefit}</li>)}
+                    {box.benefits?.map((benefit, index) => <li key={`${benefit}-${index}}`} className="leading-6 tracking-widest">{benefit}</li>)}
                     </ul>
                     <Link href={'#'} className="uppercase inline-block">view more <ArrowRight className="ml-2 inline-block h-4 w-4" /></Link>
                 </div>

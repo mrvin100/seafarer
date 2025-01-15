@@ -8,7 +8,7 @@ interface navItem {
   title: string;
   link: string;
 }
-const Header: FC = () => {
+export const Header: FC = () => {
   const navItems: navItem[] = [
     { title: "home", link: "/home" },
     { title: "page", link: "/page" },
@@ -25,6 +25,7 @@ const Header: FC = () => {
             height={100}
             width={100}
             alt="logo image"
+            className="h-auto w-auto"
           />
         </Link>
         <nav className="hidden md:flex justify-center items-center gap-8">
@@ -47,5 +48,3 @@ const Header: FC = () => {
     </header>
   );
 };
-
-export default Header;

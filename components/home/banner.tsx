@@ -5,7 +5,7 @@ import { HeadingBox } from "./heading-box";
 export const Banner: FC = () => {
   return (
     <div>
-      <AppContainer className="max-w-full p-0 w-full relative h-[70vh]">
+      <AppContainer className="max-w-full p-0 w-full relative h-[60vh]">
         <video
           className="w-full h-full object-cover"
           loop
@@ -15,7 +15,7 @@ export const Banner: FC = () => {
           <source src={"/video-boat.mp4"} type="video/mp4" />
           Your browser does not support the video tag
         </video>
-        <div className="absolute bottom-[10%] left-[5%] sm:left-[10%] px-4 sm:w-auto bg-muted/30">
+        <div className="absolute bottom-[10%] left-[5%] sm:left-[10%] px-4 sm:w-auto bg-muted/5">
           <HeadingBox
             subTitle="explore the ocean"
             title="rent a yacht"

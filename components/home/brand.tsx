@@ -17,7 +17,7 @@ export const Brands:FC = () => {
     return ( <div>
         <AppContainer className="grid justify-center items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 ">
             {brands && brands.length > 0 && brands.map((brand) => 
-            <Image key={brand.image} src={brand.image ?? '/logo-light.png'} height={100} width={100} alt="Brand image" className="mx-auto" />
+            <Image key={brand.image} src={brand.image ?? '/logo-light.png'} height={100} width={100} alt="Brand image" className="mx-auto w-auto h-auto" />
             )}
         </AppContainer>
         <Spacer small />
