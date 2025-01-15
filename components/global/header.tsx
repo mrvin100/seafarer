@@ -25,7 +25,6 @@ const Header: FC = () => {
             height={100}
             width={100}
             alt="logo image"
-            className=""
           />
         </Link>
         <nav className="hidden md:flex justify-center items-center gap-8">
