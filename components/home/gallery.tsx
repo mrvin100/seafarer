@@ -14,14 +14,14 @@ const list: Gallery[] = [
 export const Gallery: FC = () => {
   return (
     <div>
-      <AppContainer className="">
+      <AppContainer className="places-cover1">
         <HeadingBox title="yacht rental since ‘81" subTitle="yacht type variety" description="Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam rhoncus. Maecenas tempus, tellus eget…" />
         <Spacer small />
-        <div className="grid justify-center sm:grid-cols-2 gap-4 md:gap-8 ">
+        <div className="flex justify-center items-center md:items-start flex-col md:flex-row gap-6">
           {list &&
             list.length > 0 &&
             list.map((box) => (
-              <div key={box.title} className="p-2 border-muted-foreground border">
+              <div key={box.title} className="p-2 border-primary/50 border w-full max-w-md">
                 <Image
                   src={box.image ?? "/logo-light.png"}
                   height={800}
