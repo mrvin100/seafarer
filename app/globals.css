@@ -65,6 +65,12 @@ body {
   }
 }
 
+*::selection{
+  background: var(--primary);
+  color: var(--card-foreground);
+}
+
+
 @layer base {
   * {
     @apply border-border;
@@ -73,3 +79,18 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* home places background components starts */
+.places-cover1{
+  background-image: url('/place-image.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.places-cover2{
+  background-image: url('/dark-h-rev-1.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+

@@ -6,3 +6,4 @@ export { Gallery as Gallery } from "./gallery";
 export { HeadingBox as HeadingBox } from "./heading-box";
 export { Pricing as Pricing } from "./pricing";
 export { Places as Places } from "./places";
+export { Counters as Counters } from "./counters";

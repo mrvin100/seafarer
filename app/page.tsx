@@ -1,5 +1,5 @@
 import { Spacer } from "@/components/global";
-import { Banner, Calendar, Pricing, Explore, Gallery, Brands, Places } from "@/components/home"
+import { Banner, Calendar, Pricing, Explore, Gallery, Brands, Places, Counters } from "@/components/home"
 
 export default function Home() {
   return (
@@ -10,11 +10,13 @@ export default function Home() {
       <Spacer tooSmall />
       <Gallery />
       <Spacer tooSmall />
+      <Counters />
+      <Spacer tooSmall />
       <Explore />
       <Spacer tooSmall />
-      <Pricing />
-      <Spacer tooSmall />
       <Places />
+      <Spacer tooSmall />
+      <Pricing />
       <Spacer tooSmall />
       <Brands />
     </main>
