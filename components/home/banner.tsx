@@ -5,11 +5,12 @@ import { HeadingBox } from "./heading-box";
 export const Banner: FC = () => {
   return (
     <div>
-      <AppContainer className="max-w-full p-0 w-full relative h-[60vh]">
+      <AppContainer className="max-w-full p-0 w-full relative h-[63vh]">
         <video
           className="w-full h-full object-cover"
           loop
           muted={true}
+          poster="/video-boat_3_layer.jpeg"
           autoPlay
         >
           <source src={"/video-boat.mp4"} type="video/mp4" />

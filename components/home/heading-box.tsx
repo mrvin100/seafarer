@@ -13,8 +13,8 @@ interface HeadingBoxProps {
 export const HeadingBox: FC<HeadingBoxProps> = ({ title, subTitle, description, className, withDescription = true, withSubTitle = true, subTitleStyle, titleStyle }) => {
   return (
     <div className={cn("text-center space-y-3 my-8", className)}>
-      {withSubTitle &&<h4 className={cn("text-sm text-primary font-light uppercase", subTitleStyle)}>{subTitle ?? "EXOTIC DESTINATIONS"}</h4>}
-      <h2 className={cn("text-4xl uppercase -tracking-tighter md:leading-6 --font-cormorant text-card-foreground font-light", titleStyle)}>{title ?? "New places"}</h2>
+      {withSubTitle &&<h4 className={cn("text-xs text-primary font-light uppercase tracking-[.2rem] w-full", subTitleStyle)}>{subTitle ?? "EXOTIC DESTINATIONS"}</h4>}
+      <h2 className={cn("font-[family-name:var(--font-cormorant)] text-4xl uppercase tracking-[.3rem] --font-cormorant text-card-foreground font-light", titleStyle)}>{title ?? "New places"}</h2>
       {withDescription && <p className="my-2 max-w-xl mx-auto">
         {description ?? "Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam rhoncus aecenas tempus,"}
       </p>}

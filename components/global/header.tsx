@@ -18,7 +18,7 @@ export const Header: FC = () => {
   ];
   return (
     <header>
-      <AppContainer className="flex gap-8 justify-between items-center sm:p-6">
+      <AppContainer className="flex gap-8 justify-between items-center py-6 md:px-8 max-w-full">
         <Link href={"/"}>
           <Image
             src={"/logo-light.png"}
@@ -28,7 +28,7 @@ export const Header: FC = () => {
             className="h-auto w-auto"
           />
         </Link>
-        <nav className="hidden md:flex justify-center items-center gap-8">
+        <nav className="hidden md:min-w-[50vw] md:flex justify-between items-center gap-8">
           {navItems &&
             navItems.length > 0 &&
             navItems.map((navItem) => (

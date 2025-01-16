@@ -1,6 +1,6 @@
 import { AppContainer } from "../global";
 import { FC } from "react";
-import { CalendarForm } from "./claendar-form";
+import { CalendarForm } from "./calendar-form";
 
 export const Calendar: FC = () => {
   return (

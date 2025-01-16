@@ -11,11 +11,11 @@ const list: Gallery[] = [
   { image: "/images/list-img-2.jpg", title: "cometo yacht", subTitle: "123 $ / per day" },
   { image: "/images/list-img-3.jpg", title: "videto yacht", subTitle: "123 $ / per day" },
 ];
-export const Gallery: FC = () => {
+export const Places: FC = () => {
   return (
     <div>
       <AppContainer className="">
-        <HeadingBox title="yacht rental since ‘81" subTitle="yacht type variety" description="Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam rhoncus. Maecenas tempus, tellus eget…" />
+        <HeadingBox />
         <Spacer small />
         <div className="grid justify-center sm:grid-cols-2 gap-4 md:gap-8 ">
           {list &&

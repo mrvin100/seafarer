@@ -13,10 +13,10 @@ export const Explore: FC = () => {
           height={1000}
           width={1000}
           alt="Explore image"
-          className="w-full max-h-96 h-full object-cover"
+          className="w-full min-h-[40vh] sm:max-h-96 h-full object-cover sm:object-contain md:object-cover"
         />
-        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full px-4 sm:w-auto">
-          <HeadingBox title="exotic shaore cruises" withDescription={false} withSubTitle={false} />
+        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full px-4 sm:max-w-xl lg:w-auto">
+          <HeadingBox title="exotic shore cruises" withDescription={false} withSubTitle={false} />
           <div className="grid sm:grid-cols-2 gap-4 md:gap-8">
             <Button className="py-6 px-8" variant={"outline"}>
               EXPLORE
