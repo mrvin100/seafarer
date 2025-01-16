@@ -40,8 +40,8 @@ export const Counters: FC = () => {
 const CountItem = ({ value, description }: { value: number; description: string }) => {
    return (
       <div className='relative grid place-content-center'>
-         <p className='font-[family-name:var(--font-cormorant)] text-5xl lg:text-8xl font-extrabold text-primary/50 text-center'>{value}</p>
-         <blockquote className='text-xs uppercase text-card-foreground font-normal tracking-[.2rem] absolute top-0 right-0 bottom-0 left-0 grid place-content-center'>{description}</blockquote>
+         <p className='font-[family-name:var(--font-cormorant-upright)] text-5xl lg:text-8xl font-extrabold text-primary/50 text-center'>{value}</p>
+         <blockquote className='font-[family-name:var(--font-inconsolata)] text-xs uppercase text-card-foreground font-normal tracking-[.2rem] absolute top-0 right-0 bottom-0 left-0 grid place-content-center'>{description}</blockquote>
       </div>
    )
 }

@@ -21,7 +21,7 @@ export const Banner: FC = () => {
             subTitle="explore the ocean"
             title="rent a yacht"
             className="text-left"
-            titleStyle="font-extralight md:text-6xl"
+            titleStyle="font-[family-name:var(--font-cormorant-garamont)] font-extralight md:text-6xl"
             subTitleStyle="text-card-foreground"
             withDescription={false}
           />

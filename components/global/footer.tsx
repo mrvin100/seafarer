@@ -68,7 +68,7 @@ export const Footer: FC = () => {
             width={150}
             alt="Footer Logo"
           />
-          <p className="text-sm">
+          <p className="font-[family-name:var(--font-roboto)] text-sm">
             Seafarer, a WP theme equipped with the utmost practical features for
             your yacht & boat rental business.
           </p>
@@ -86,8 +86,8 @@ export const Footer: FC = () => {
           footerGroups.length > 0 &&
           footerGroups.map((footerGroup) => (
             <div key={footerGroup.title}>
-              <h3 className="text-foreground uppercase mb-3 font-light">{footerGroup.title}</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="font-[family-name:var(--font-cormorant-upright)] text-foreground uppercase mb-3 font-light">{footerGroup.title}</h3>
+              <ul className="font-[family-name:var(--font-roboto)] space-y-2 text-sm">
                 {footerGroup.items.map((item) => (
                   <li key={item.title}>
                     <Link href={item.link ?? "#"}>{item.title}</Link>
@@ -97,8 +97,8 @@ export const Footer: FC = () => {
             </div>
           ))}
         <div className="space-y-4">
-          <h3 className="text-foreground uppercase mb-3 font-light">Subscribe</h3>
-          <p className="text-sm">
+          <h3 className="font-[family-name:var(--font-cormorant-upright)] text-foreground uppercase mb-3 font-light">Subscribe</h3>
+          <p className="font-[family-name:var(--font-roboto)] text-sm">
             Subscribe to our newsletter for regular updates on our seasonal
             promotions, offers & lots more.
           </p>

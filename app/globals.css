@@ -65,9 +65,9 @@ body {
   }
 }
 
-*::selection{
-  background: var(--primary);
-  color: var(--card-foreground);
+*::selection {
+  background: var(--primary); 
+  color: var(--card-foreground); 
 }
 
 

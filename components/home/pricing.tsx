@@ -27,10 +27,10 @@ export const Pricing: FC = () => {
             list.map((box) => (
               <div key={box.title} className={cn("p-3 border w-full", box.isSelected && 'border-primary/70')}>
                 <div className="border border-primary/20 text-center space-y-4 md:space-y-6 p-4 sm:p-12 w-full">
-                    <h4 className="font-[family-name:var(--font-cormorant)] uppercase font-light font-comparant text-2xl">{box.title}</h4>
-                    <h3 className="font-[family-name:var(--font-cormorant)] font-normal text-5xl"><sup className="font-light">$</sup>{box.price} <sub className="font-[family-name:Roboto] font-extralight text-sm block">/per month</sub></h3>
+                    <h4 className="font-[family-name:var(--font-cormorant-upright)] uppercase font-light font-comparant text-2xl">{box.title}</h4>
+                    <h3 className="font-[family-name:var(--font-cormorant-upright)] font-normal text-5xl"><sup className="font-light">$</sup>{box.price} <sub className="font-[family-name:Roboto] font-extralight text-sm block">/per month</sub></h3>
                     <ul className="text-sm max-w-52 mx-auto space-y-4">
-                    {box.benefits?.map((benefit, index) => <li key={`${benefit}-${index}}`} className="leading-6 tracking-widest">{benefit}</li>)}
+                    {box.benefits?.map((benefit, index) => <li key={`${benefit}-${index}}`} className="font-[family-name:var(--font-roboto)] leading-6 tracking-widest">{benefit}</li>)}
                     </ul>
                     <Link href={'#'} className="font-[family-name:var(--font-cormorant)] uppercase inline-block">view more <ArrowRight className="ml-2 inline-block h-4 w-4" /></Link>
                 </div>
