@@ -3,10 +3,11 @@ import { AppContainer } from "../global";
 import { FC } from "react";
 import { Button } from "../ui/button";
 import { HeadingBox } from "./heading-box";
+import {motion} from 'framer-motion'
 
 export const Explore: FC = () => {
   return (
-    <div>
+    <motion.div whileInView={{opacity: 1}}>
       <AppContainer className="max-w-full p-0 w-full relative">
         <Image
           src={"/explore-image.jpg"}
@@ -25,6 +26,6 @@ export const Explore: FC = () => {
           </div>
         </div>
       </AppContainer>
-    </div>
+    </motion.div>
   );
 };
