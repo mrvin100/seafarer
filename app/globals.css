@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*::selection {
+  background: hsl(var(--primary)); 
+  color: hsl(var(--card-foreground)); 
+}
+
 body {
   font-family: var(--font-inconsolata);
 }
@@ -71,10 +76,6 @@ body {
   }
 }
 
-*::selection {
-  background: var(--primary); 
-  color: var(--card-foreground); 
-}
 
 
 @layer base {
