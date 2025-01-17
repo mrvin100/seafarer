@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Cormorant_Upright, Inconsolata, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Footer, Header } from "@/components/global";
 import { Toaster } from "@/components/ui/sonner";
-import { Cormorant_Garamond, Cormorant_Upright, Inconsolata, Roboto } from "next/font/google";
 
 const cormorant_garamond = Cormorant_Garamond({
   variable: "--font-cormorant-garamont",
