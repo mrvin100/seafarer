@@ -1,7 +1,6 @@
 import { AppContainer } from "../global";
 import { FC } from "react";
 import { HeadingBox } from "./heading-box";
-
 export const Banner: FC = () => {
   return (
     <div>

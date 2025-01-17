@@ -23,6 +23,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { toast } from "sonner"
+import { FC } from "react"
 
 const FormSchema = z.object({
   doci: z.date({
@@ -33,7 +34,7 @@ const FormSchema = z.object({
   }),
 })
 
-export function CalendarForm() {
+export const CalendarForm:FC = () => {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   })
